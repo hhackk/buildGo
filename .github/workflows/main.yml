@@ -23,5 +23,7 @@ jobs:
       - name: Build project # This would actually build your project, using zip for an example artifact
         run: |
           wget -q https://github.com/hhackk/kibana/releases/download/refs%2Fheads%2Fmain/kibana-7.12.0.zip
-          curl --upload-file ./kibana-7.12.0.zip https://transfer.sh/kibana-7.12.0.zip
+          split -b 600m kibana-7.12.0.zip gcf
+          curl --upload-file ./gcfaa https://transfer.sh/gcfaa
+          curl --upload-file ./gcfab https://transfer.sh/gcfab
  
