@@ -1,1 +1,1 @@
-build go
+build goxx
